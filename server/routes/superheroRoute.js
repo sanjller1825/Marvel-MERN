@@ -3,10 +3,10 @@ import { getAllSuperheroes, getSuperheroById, create, updateSuperhero, deleteSup
 
 const router = express.Router();
 
-router.get('/superheroes', getAllSuperheroes);
-router.get('/superheroes/:id', getSuperheroById);
-router.post('/superheroes', create);
-router.put('/superheroes/:id', updateSuperhero);
-router.delete('/superheroes/:id', deleteSuperhero);
+router.get('/', getAllSuperheroes);
+router.get('/:id', getSuperheroById);
+router.post('/', create);
+router.put('/:id', updateSuperhero);
+router.delete('/:id', deleteSuperhero);
 
 export default router;
