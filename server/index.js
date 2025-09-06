@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import router from './routes/superheroRoute.js';
+import marvelRouter from './routes/marvelRoute.js';
 import dotenv from 'dotenv';
 
 const app = express();
@@ -24,4 +25,5 @@ mongoose.connect(MONGO_URL)
         console.error('Error connecting to MongoDB:', error);
     });
 
-app.use('/api', router);
+app.use('/api/superheroes', router);
+app.use('/api/marvel', marvelRouter);

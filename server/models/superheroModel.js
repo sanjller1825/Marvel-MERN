@@ -12,4 +12,4 @@ const superheroSchema = new mongoose.Schema({
     createdAt: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('Superhero', superheroSchema);
+export default mongoose.model('Superhero', superheroSchema);
