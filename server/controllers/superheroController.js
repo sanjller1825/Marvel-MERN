@@ -1,4 +1,4 @@
-import Superhero from '../models/Superhero.js';
+import Superhero from '../models/superheroModel.js';
 
 export const getAllSuperheroes = async (req, res) => {
     try {
